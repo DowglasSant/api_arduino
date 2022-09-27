@@ -23,6 +23,10 @@ app.post("/arduinodata", celebrate({
 }),
     arduinoDataController.addData);
 
+app.get('/', (req: Request, res: Response) => {
+    res.send('Api Arduino Data Running...');
+});
+
 app.use(errors());
 
 app.use(
