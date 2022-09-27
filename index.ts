@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 
-// createConnection();
+createConnection();
 
 const arduinoDataController = new ArduinoDataController();
 
