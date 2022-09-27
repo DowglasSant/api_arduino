@@ -1,8 +1,8 @@
 import 'reflect-metadata';
-import routes from './routes';
+import routes from './src/shared/infra/http/routes';
 import { createConnection } from 'typeorm';
 import express, { NextFunction, Request, Response } from 'express';
-import AppError from '../../errors/AppErrors';
+import AppError from './src/shared/errors/AppErrors';
 import { errors } from 'celebrate';
 
 const app = express();
